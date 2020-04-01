@@ -1,0 +1,98 @@
+* {
+  background-color: #0E0E10;
+  color: #be90d4;
+  font-family: Mansalva;
+
+}
+
+body {
+  overflow-x: hidden;
+overflow-y:hidden;
+}
+
+#container {
+  position:fixed
+  height: 100px;
+  width: 521px;
+  border-bottom-width: thin;
+  border-bottom-color: #be90d4;
+}
+
+
+.logo {
+  height: 30px;
+  width: 30px;
+  padding-top: 12px;
+  z-index: 2;
+}
+
+#parentBox {
+  position: absolute;
+  display:grid;
+  grid-template-columns: 30px 398px 90px 288px 30px 112px;
+  grid-template-rows: 90px;
+  width: auto;
+  right: -431px;
+  animation: move 18000ms ease-in-out ;
+  animation-fill-mode: none;
+  animation-iteration-count: infinite;
+}
+
+#potato{
+  height: 90px;
+  width: 90px;
+  animation: spin 18000ms ease-in-out ;
+  animation-fill-mode: none;
+  animation-iteration-count: infinite;
+  z-index: 1;
+}
+
+#potatoBox {
+  background-color: none;
+  z-index: 1;
+}
+
+#Instagram {
+  width: auto;
+  text-align: left;
+  margin-right: 10px;
+  z-index: 2;
+  font-size: 18px;
+}
+
+#Twitter {
+  text-align: left;
+  z-index: 2;
+  font-size: 18px;
+  top: 10px;
+}
+
+
+@keyframes move {
+  0%   {right: -431px;}
+  3.1%   {right: -431px;)}
+  16% {right: 0px;}
+  46.1% {right: 0px;}
+  49% {right:200px;}
+  66.66% {right: -431px;}
+  100% {right: -431px;}
+}
+
+@keyframes spin {
+  0% {transform-origin: center;
+      transfom: rotate(0deg);}
+  3% {transform: rotate(15deg)}
+  14% {transform: rotate(-360deg)}
+  14.001% {transform: rotate(0deg)}
+  43% {transform: rotate(0deg)}
+  46% {transform: rotate(15deg)}
+  49% {transform: rotate(-360deg)}
+  50% {transform: rotate(-60deg);}
+  51% {transform: rotate(-80deg)  }
+  52% {transform: rotate(-75deg);}
+  53% {transform: rotate(-70deg);}
+  54% {transform: rotate(-65deg);}
+  56% {transform: rotate(-60deg);}
+  62% { transform:rotate(-55deg);}
+  65% {transform:rotate(0deg);}
+}
